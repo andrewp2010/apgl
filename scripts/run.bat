@@ -1,7 +1,7 @@
 @echo off
 
-pushd ..\
-if not exist bin\ echo "No executbale exists"
+cd %~dp0..
 call cmd /C bin\Debug\openGLCore.exe
-popd
+if not exist bin\ echo     - Run .\scripts\build.bat to build executable
+
 PAUSE

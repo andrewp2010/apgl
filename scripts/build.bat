@@ -1,7 +1,7 @@
 @echo off
 
-pushd ..\
-if not exist build\ echo "Build folder does not exist"
+cd %~dp0..
 call cmake --build build\
-popd
+if not exist build\ echo     - Run .\scripts\configure.bat to make and configure build\ directory
+
 PAUSE
