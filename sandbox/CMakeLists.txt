@@ -7,12 +7,12 @@ set(SOURCES
     src/main.cpp)
 
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
-add_executable(openGLApplication ${SOURCES})
+add_executable(sandbox ${SOURCES})
 
 ##################################################
 ##########  Subdirectories and Linking  ##########
 ##################################################
 
 # APGL
-target_include_directories(openGLApplication PUBLIC ${CMAKE_SOURCE_DIR}/apgl/src)
-target_link_libraries(openGLApplication apgl)                       
+target_include_directories(sandbox PUBLIC ${CMAKE_SOURCE_DIR}/apgl/src)
+target_link_libraries(sandbox apgl)                       

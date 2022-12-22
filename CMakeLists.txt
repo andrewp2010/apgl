@@ -20,4 +20,4 @@ project(openGLSandbox)
 ################  Subdirectories  ################
 ##################################################
 add_subdirectory(apgl)
-add_subdirectory(openGLApplication)
+add_subdirectory(sandbox)
