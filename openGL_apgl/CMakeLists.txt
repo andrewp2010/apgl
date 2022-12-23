@@ -29,7 +29,7 @@ if(GIT_FOUND AND EXISTS "${PROJECT_SOURCE_DIR}/.git")
 endif()
 
 # GLFW
-if (NOT EXISTS "${PROJECT_SOURCE_DIR}/apgl/vendor/glfw/CMakeLists.txt")
+if (NOT EXISTS "${PROJECT_SOURCE_DIR}/openGl_apgl/vendor/glfw/CMakeLists.txt")
     message(FATAL_ERROR "The GLFW submodule was not downloaded! GIT_SUBMODULE was turned off or failed. Please update submodules and try again.")
 endif()
 

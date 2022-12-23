@@ -12,16 +12,15 @@ Configure and build with CMake using repository scripts:
 General:
     - acronyms of any size are considered a single word
 
-kebab-case:
-    - multi-word directory names
-    - capitalize each word
+snake_case:
+    - directory names
 
 camelCase:
+    - namespaces
     - variables
     - functions/methods
 
 PascalCase
-    - single word file names
-    - namespaces
+    - file names
     - classes
     - interfaces

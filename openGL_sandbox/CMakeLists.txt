@@ -14,5 +14,5 @@ add_executable(sandbox ${SOURCES})
 ##################################################
 
 # APGL
-target_include_directories(sandbox PUBLIC ${CMAKE_SOURCE_DIR}/apgl/src)
+target_include_directories(sandbox PUBLIC ${CMAKE_SOURCE_DIR}/openGL_apgl/src)
 target_link_libraries(sandbox apgl)                       
