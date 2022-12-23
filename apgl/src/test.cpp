@@ -6,12 +6,12 @@
 
 namespace apgl
 {
-	void TestLog()
+	void testLog()
 	{
 		std::cout << "Hello OpenGL Sandbox!" << std::endl;
 	}
 
-	void Window()
+	void window()
 	{
 		GLFWwindow* window;
 		if (!glfwInit())

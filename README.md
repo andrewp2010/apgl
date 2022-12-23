@@ -16,11 +16,11 @@ snake_case:
 - Directory names
 
 camelCase:
+- File names
 - Namespaces
 - Variables
 - Functions/methods
 
 PascalCase
-- File names
 - Classes
 - Interfaces

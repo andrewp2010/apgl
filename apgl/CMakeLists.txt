@@ -7,8 +7,8 @@ set(SOURCES
     src/test.h
     src/test.cpp)
     
-set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
-add_library(apgl ${SOURCES})
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY $<1:${BIN_DIR}/apgl>)
+add_library(apgl STATIC ${SOURCES})
 
 ##################################################
 ###############  Check Submodules  ###############
@@ -29,14 +29,13 @@ if(GIT_FOUND AND EXISTS "${PROJECT_SOURCE_DIR}/.git")
 endif()
 
 # GLFW
-if (NOT EXISTS "${PROJECT_SOURCE_DIR}/apgl/vendor/glfw/CMakeLists.txt")
+if (NOT EXISTS "${APGL_DIR}/vendor/glfw/CMakeLists.txt")
     message(FATAL_ERROR "The GLFW submodule was not downloaded! GIT_SUBMODULE was turned off or failed. Please update submodules and try again.")
 endif()
 
 ##################################################
 ##########  Subdirectories and Linking  ##########
 ##################################################
-
 # GLFW
 add_subdirectory(vendor/glfw)
 include_directories(vendor/glfw/include)

@@ -4,6 +4,6 @@
 
 int main()
 {
-	apgl::TestLog();
-	apgl::Window();
+	apgl::testLog();
+	apgl::window();
 }
