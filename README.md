@@ -1,4 +1,4 @@
-# OpenGLSandbox
+# apettit_openGl
 OpenGL support library and test framework
 
 Configure and build with CMake using repository scripts:
@@ -10,17 +10,17 @@ Configure and build with CMake using repository scripts:
     ```
 ## Style Guide
 General:
-    - acronyms of any size are considered a single word
+- Acronyms of any size are considered a single word
 
 snake_case:
-    - directory names
+- Directory names
 
 camelCase:
-    - namespaces
-    - variables
-    - functions/methods
+- Namespaces
+- Variables
+- Functions/methods
 
 PascalCase
-    - file names
-    - classes
-    - interfaces
+- File names
+- Classes
+- Interfaces
